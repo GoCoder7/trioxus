@@ -1,0 +1,17 @@
+[package]
+name = "trioxus"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/GoCoder7/trioxus"
+authors = ["GoCoder <gocoder7@gmail.com>"]
+description = "Declarative Three.js for Dioxus — React Three Fiber for Rust across Web and Desktop."
+readme = "README.md"
+keywords = ["dioxus", "threejs", "3d", "webgl", "graphics"]
+categories = ["gui", "rendering::graphics-api", "visualization"]
+
+[dependencies]
+dioxus = { version = "0.7.0", default-features = false, features = ["hooks", "signals", "macro", "html"] }
+
+[dev-dependencies]
+dioxus = { version = "0.7.0", default-features = false, features = ["minimal"] }
